@@ -11,12 +11,11 @@ export const PersonCard = ({first_name, last_name, avatar, email} : DataType) =>
             <div className="">
                 <img src={avatar} className="w-full h-full object-cover"/>
             </div>
-            <div className="flex flex-wrap w-full">
-                <p>{first_name}</p>
-                <p>{last_name}</p>
-                <div className="w-full bg-black">
-                    <p className="break-words">{email}</p>
-                </div>
+            <div className="flex p-2">
+               <ul className="leading-5 space-y-2">
+                    <li><span className="font-bold">Name: </span> {first_name} {last_name}</li>
+                    <li className="break-all"><span className="font-bold">Email: </span><a href="#" className="text-blue-600 underline">{email}</a></li>
+               </ul>
             </div>
             {/* destructuring every object in the map
             {data.map(({first_name, last_name, avatar, email}) => <h1>Person{first_name}</h1>
