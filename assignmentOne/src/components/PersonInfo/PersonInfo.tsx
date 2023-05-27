@@ -1,4 +1,4 @@
-import { DataType } from "../../DataType"
+import { DataType } from "../../interface/DataType"
 import { PersonProps } from "../../interface/PersonProps"
 import { PersonCard } from "../PersonCard/PersonCard"
 

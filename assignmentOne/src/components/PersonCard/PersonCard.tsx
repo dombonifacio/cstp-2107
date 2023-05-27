@@ -1,6 +1,6 @@
 
-import { DataType } from "../../DataType"
-import { PersonProps } from "../../interface/PersonProps"
+import { DataType } from "../../interface/DataType"
+
 
 
 // We destructure the data coming from the parent component PersonInfo then defining a type for the properties

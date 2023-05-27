@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import assignmentData from './assignmentData.json';
-import { DataType } from './DataType';
+import { DataType } from './interface/DataType';
 
 import './App.css'
 import { PersonInfo } from './components/PersonInfo/PersonInfo';
