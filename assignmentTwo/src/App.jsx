@@ -18,6 +18,10 @@ function App() {
       element: <HomePage />
     },
     {
+      path: '/name:country',
+      
+    },
+    {
       path: '*',
       element: <NotFoundPage />
     }

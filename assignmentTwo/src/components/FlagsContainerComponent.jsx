@@ -1,6 +1,7 @@
 // third party libraries
 import axios from "axios"
 import { useState, useEffect} from "react"
+import { FlagCardComponent } from "./FlagGridComponent"
 
 export const FlagsContainerComponent = () => {
 
@@ -16,14 +17,16 @@ export const FlagsContainerComponent = () => {
     })
 
 
-    console.log(flags)
+    // console.log(flags)
     
     
 
     return (
-        
-        <div>
+       
+        <div className="max-w-[1560px]">
 
+            <FlagCardComponent data={flags}/>
         </div>
+         
     )
 }

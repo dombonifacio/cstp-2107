@@ -2,8 +2,8 @@ import { FlagsContainerComponent } from "../components/FlagsContainerComponent"
 
 export const HomePage = () => {
     return (
-        <div>
-            <h1>Home Page</h1>
+        <div className="">
+            <h1 className="text-5xl font-semibold">Countries</h1>
             <FlagsContainerComponent />
         </div>
     )
