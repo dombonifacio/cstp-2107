@@ -6,7 +6,7 @@ export const FlagCardComponent = ({data}) => {
   
     return (
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 m-5 "> 
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 m-5"> 
             {data.map((countryInfo, index) => {
                 return (
                     <div key={index} className="flex flex-col w-full bg-white h-auto">
@@ -20,7 +20,7 @@ export const FlagCardComponent = ({data}) => {
                                     {countryInfo.name.common}
                                 </li>
                                 <li className="w-full text-end">
-                                   <Link to={`$`} className="items-center justify-center p-3 w-full break-words font-medium text-gray-500 rounded-lg bg-gray-200 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
+                                   <Link to={`/name/${countryInfo.name.common}`} className="items-center justify-center p-3 w-full break-words font-medium text-gray-500 rounded-lg bg-gray-200 hover:text-gray-900 hover:bg-gray-400 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
                                     Learn More
                                    </Link> 
                                 </li>

@@ -8,6 +8,7 @@ import axios from 'axios'
 // pages 
 import { HomePage } from './pages/HomePage'
 import { NotFoundPage } from './pages/NotFoundPage'
+import { DetailsPage } from './pages/DetailsPage'
 
 
 function App() {
@@ -18,8 +19,9 @@ function App() {
       element: <HomePage />
     },
     {
-      path: '/name:country',
-      
+      // dynamic route
+      path: '/name/:country',
+      element: <DetailsPage />
     },
     {
       path: '*',
